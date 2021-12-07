@@ -1,17 +1,4 @@
-import styled, { css } from 'styled-components'
-
-export const DefaultArrow = css`
-  height: 40px;
-  width: 40px;
-  font-size: 12px;
-  border-radius: 50%;
-  border: solid 2px #231e41;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-`
+import styled from 'styled-components'
 
 export const SectionTopProducts = styled.section`
   margin: 6rem 1rem;
@@ -59,24 +46,7 @@ export const Price = styled.span`
   font-size: 1rem;
   font-weight: bold;
 `
-export const Heading = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  // margin: 1rem;
-`
 
-export const Arrow = styled.div`
-  display: flex;
-`
-
-export const NextArrow = styled.span`
-  ${DefaultArrow}
-`
-export const PrevArrow = styled.span`
-  ${DefaultArrow}
-  margin-right:5px
-`
 export const ArrowBackIosIcon = styled.svg`
   margin-left: 5px;
 `

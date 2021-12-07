@@ -8,16 +8,22 @@ export const SectionContainer = styled.section`
   margin: 6rem 1rem;
 `
 export const Container = styled.div`
+  scroll-behavior: smooth;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  overflow-x: scroll;
+  // margin: 1rem;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `
 export const Categories = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 8rem;
+  // width: 8rem;
+  margin-right: 1rem;
   &:nth-child(odd) {
     background: antiquewhite;
   }
@@ -36,4 +42,7 @@ export const Text = styled.span`
 `
 export const Image = styled.div`
   padding: 1rem;
+`
+export const Img = styled.img`
+  width: 8rem;
 `

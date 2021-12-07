@@ -6,15 +6,17 @@ import {
   TopProduct,
   Card,
   Image,
-  Heading,
-  Arrow,
-  PrevArrow,
-  NextArrow,
   Text,
   Name,
   Price,
 } from './topproducts.styles'
-import { PrimaryHeading } from '../GlobalStyles/globalstyles'
+import {
+  PrimaryHeading,
+  Heading,
+  Arrow,
+  PrevArrow,
+  NextArrow,
+} from '../GlobalStyles/globalstyles'
 const TopProducts = () => {
   const scrollingNode = useRef(null)
   const scroll = (scrollOffset) => {

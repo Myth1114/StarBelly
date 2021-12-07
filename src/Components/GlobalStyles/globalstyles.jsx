@@ -1,4 +1,17 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+
+export const DefaultArrow = css`
+  height: 40px;
+  width: 40px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: solid 2px #231e41;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+`
 
 export const Button = styled.button`
   background-color: #f5c332;
@@ -8,15 +21,40 @@ export const Button = styled.button`
   padding: 0.7em 1em;
   border: none;
   border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 `
 export const Button2 = styled(Button)`
-  background: #fff;
-  color: #f5c332;
-  border: 1px solid #f5c332;
+  background: #f5c332;
+  color: #fff;
+  &:hover {
+    background: #fff;
+    color: #f5c332;
+    border: 1px solid #f5c332;
+  }
 `
 
 export const PrimaryHeading = styled.h1`
   font-size: 40px;
   letter-spacing: -2px;
   color: #231e41;
+`
+
+export const Heading = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // margin: 1rem;
+`
+
+export const Arrow = styled.div`
+  display: flex;
+`
+
+export const NextArrow = styled.span`
+  ${DefaultArrow}
+`
+export const PrevArrow = styled.span`
+  ${DefaultArrow}
+  margin-right:5px
 `

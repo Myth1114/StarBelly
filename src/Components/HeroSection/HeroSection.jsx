@@ -16,9 +16,9 @@ const HeroSection = () => {
             </HeroLeft>
             <HeroRight>
                 <Images>
-                    <Image1 src='/Images/Hero-1.png' alt='qwerrt'  ></Image1>
-                    <Image2 src='/Images/Hero-2.png' alt='qwerrt'  ></Image2>
-                    <Image3 src='/Images/Hero-3.png' alt='qwerrt'  ></Image3>
+                    <Image1 src='/Images/Hero-4.png' alt='qwerrt'  ></Image1>
+                    <Image2 src='/Images/Hero-5.png' alt='qwerrt'  ></Image2>
+                    <Image3 src='/Images/Hero-6.png' alt='qwerrt'  ></Image3>
                 </Images>
             </HeroRight>
             </HeroSections>   
