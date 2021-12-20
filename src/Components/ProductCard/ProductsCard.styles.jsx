@@ -1,16 +1,18 @@
 import styled from 'styled-components'
 
-
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 0.5rem;
+  margin-right: 0.5rem;
 `
 export const Image = styled.img`
   width: 20rem;
   border-radius: 0.7rem;
   &:hover {
     transform: scale(0.97);
+  }
+  @media (max-width: 600px) {
+    width: 15rem;
   }
 `
 export const Text = styled.div`

@@ -21,19 +21,38 @@ export const HeroSections = styled.div`
   align-items: center;
   flex-wrap: wrap;
   margin: 70px 60px 0 60px;
+  @media (max-width: 600px) {
+    justify-content: center;
+    margin: 60px 10px 0 10px;
+  }
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `
 
 export const Text = styled.h1`
-  font-family: 'Monoton', cursive;
   font-size: 60px;
   color: #231e41;
+  @media (max-width: 600px) {
+    font-size: 30px;
+    text-align: center;
+  }
 `
-export const HeroLeft = styled(motion.h1)``
+export const HeroLeft = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
 export const HeroRight = styled.div`
-  // display: flex;
+  display: flex;
   // flex-direction: column;
   // align-items: center;
   // height: 100vh;
+  @media (min-width: 768px) {
+    margin-left: 12rem;
+    margin-bottom: 2rem;
+  }
 `
 
 export const Images = styled.div`
@@ -48,10 +67,20 @@ export const Image1 = styled.img`
   right: 83%;
   z-index: 1;
   animation: ${fadeInOut} 3s infinite ease-in-out;
+  @media (max-width: 600px) {
+    right: 0;
+    top: 85%;
+    width: 50%;
+  }
 `
 export const Image2 = styled.img`
   z-index: 2;
   animation: ${fadeInOut} 2s infinite ease-in-out;
+  @media (max-width: 600px) {
+    right: 0;
+    width: 50%;
+    margin-left: 4rem;
+  }
 `
 export const Image3 = styled.img`
   position: absolute;
@@ -59,4 +88,9 @@ export const Image3 = styled.img`
   z-index: 3;
   left: -93%;
   animation: ${fadeInOut} 4s infinite ease-in-out;
+  @media (max-width: 600px) {
+    width: 60%;
+    top: 98%;
+    left: -4%;
+  }
 `

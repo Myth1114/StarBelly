@@ -38,6 +38,9 @@ export const PrimaryHeading = styled.h1`
   font-size: 40px;
   letter-spacing: -2px;
   color: #231e41;
+  @media (max-width: 600px) {
+    font-size: 25px;
+  }
 `
 
 export const Heading = styled.div`

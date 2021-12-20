@@ -5,6 +5,9 @@ export const Container = styled.section`
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 6rem 1rem;
+  @media (max-width: 600px) {
+    margin: 3rem 0.5rem;
+  }
 `
 // Container,
 //   ContainerLeft,
@@ -30,6 +33,9 @@ export const Services = styled.div`
   flex-direction: column;
   justify-content: center;
   margin: 2rem;
+  @media (max-width: 600px) {
+    margin: 0;
+  }
 `
 export const ServicesList = styled.div`
   display: flex;
@@ -45,5 +51,8 @@ export const Text = styled.span`
   font-size: 1.4rem;
   color: #231e41;
   font-weight: bold;
+  @media (max-width: 600px) {
+    font-size: 1rem;
+  }
 `
 export const Image = styled(motion.div)``

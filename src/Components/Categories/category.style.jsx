@@ -6,6 +6,9 @@ import styled from 'styled-components'
 // Image,
 export const SectionContainer = styled.section`
   margin: 6rem 1rem;
+  @media (max-width: 600px) {
+    margin: 9rem 0.5rem 0rem 0.5rem;
+  }
 `
 export const Container = styled.div`
   scroll-behavior: smooth;
