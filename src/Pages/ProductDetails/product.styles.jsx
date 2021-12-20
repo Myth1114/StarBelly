@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-
-export const SectionContainer = styled.div`
+import { motion } from 'framer-motion'
+export const SectionContainer = styled(motion.div)`
   margin-top: 5rem;
 `
 

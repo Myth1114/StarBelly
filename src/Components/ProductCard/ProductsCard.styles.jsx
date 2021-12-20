@@ -1,18 +1,6 @@
 import styled from 'styled-components'
-import { motion } from 'framer-motion'
-export const SectionTopProducts = styled.section`
-  margin: 6rem 1rem;
-`
-export const TopProduct = styled(motion.div)`
-  scroll-behavior: smooth;
-  display: flex;
-  justify-content: space-between;
-  overflow-x: scroll;
-  // margin: 1rem;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-`
+
+
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
@@ -45,8 +33,4 @@ export const Price = styled.span`
   color: #231e41;
   font-size: 1rem;
   font-weight: bold;
-`
-
-export const ArrowBackIosIcon = styled.svg`
-  margin-left: 5px;
 `

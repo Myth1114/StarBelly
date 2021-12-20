@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import { motion } from 'framer-motion'
 export const Container = styled.section`
   display: flex;
   justify-content: space-around;
@@ -46,5 +46,4 @@ export const Text = styled.span`
   color: #231e41;
   font-weight: bold;
 `
-export const Image = styled.div``
-export const Img = styled.img``
+export const Image = styled(motion.div)``

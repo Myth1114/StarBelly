@@ -14,9 +14,18 @@ import {
 } from './product.styles'
 import { Button2 } from '../../Components/GlobalStyles/globalstyles'
 import { Star } from '@material-ui/icons'
+
+//animation
+import { TopProductsAnimation } from '../../Components/Animate/Animate'
+
 const ProductDetail = () => {
   return (
-    <SectionContainer>
+    <SectionContainer
+      variants={TopProductsAnimation}
+      initial='hidden'
+      animate='show'
+      exit='exit'
+    >
       <Container>
         <ContainerLeft>
           <Image>

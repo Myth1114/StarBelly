@@ -10,13 +10,15 @@ import {
   Text,
   ContainerRight,
   Image,
-  Img,
 } from './whyus.styles'
 
 import LocalShippingIcon from '@material-ui/icons/LocalShipping'
 import MoneyIcon from '@material-ui/icons/Money'
 import PanToolIcon from '@material-ui/icons/PanTool'
+import { useScroll } from '../../UseScroll/UseScroll'
+import { ImageAnimation } from '../Animate/Animate'
 const WhyUs = () => {
+  const [element, controls] = useScroll()
   return (
     <Container>
       <ContainerLeft>
@@ -48,9 +50,14 @@ const WhyUs = () => {
           </ServicesList>
         </Services>
       </ContainerLeft>
-      <ContainerRight>
-        <Image>
-          <Img src='/Images/deliveryboy.png'></Img>
+      <ContainerRight ref={element}>
+        <Image
+          variants={ImageAnimation}
+          initial='hidden'
+          final='show'
+          animate={controls}
+        >
+          <img src='/Images/deliveryboy.png' alt='aj'></img>
         </Image>
       </ContainerRight>
     </Container>

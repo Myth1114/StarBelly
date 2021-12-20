@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components'
-
+import { motion } from 'framer-motion'
 const fadeInOut = keyframes`
 0% {
     -webkit-transform: scale(1);
@@ -28,7 +28,7 @@ export const Text = styled.h1`
   font-size: 60px;
   color: #231e41;
 `
-export const HeroLeft = styled.h1``
+export const HeroLeft = styled(motion.h1)``
 export const HeroRight = styled.div`
   // display: flex;
   // flex-direction: column;
