@@ -7,7 +7,8 @@ export const Card = styled.div`
 `
 export const Image = styled.img`
   width: 20rem;
-  border-radius: 0.7rem;
+  // border-radius: 0.7rem;
+  overflow: hidden;
   &:hover {
     transform: scale(0.97);
   }
