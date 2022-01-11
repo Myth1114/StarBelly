@@ -6,24 +6,33 @@ export const HeaderContainer = styled.section`
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0px 10px 10px 0px rgb(0 0 0 / 15%);
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 100;
   opacity: 0.96;
 `
 export const Nav = styled.div`
   display: flex;
-  justify-content: space-around;
+  // justify-content: space-around;
   align-items: center;
+  margin: 0 2rem;
+  @media (max-width: 600px) {
+    justify-content: space-between;
+  }
 `
 export const StarBelly = styled.div`
   color: #231e41;
+  cursor: pointer;
 `
 
 export const MenusUl = styled.ul`
   display: flex;
   align-items: center;
   list-style-type: none;
+  margin-left: auto;
+  @media (max-width: 600px) {
+    display: none;
+  }
 `
 export const MenusUlLi = styled.li`
   padding: 0 30px;
@@ -33,6 +42,9 @@ export const MenusUlLi = styled.li`
   font-size: 14px;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
 `
 
 export const Button = styled.button`

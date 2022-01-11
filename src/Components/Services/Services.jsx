@@ -26,7 +26,7 @@ const Services = () => {
           </TextDiv>
         </Box>
         <Box>
-          <Number>01</Number>
+          <Number>02</Number>
           <TextDiv>
             <Heading>Fresh ingredients from organic farms</Heading>
             <SubHeading>
@@ -38,7 +38,7 @@ const Services = () => {
           </TextDiv>
         </Box>
         <Box>
-          <Number>01</Number>
+          <Number>03</Number>
           <TextDiv>
             <Heading>Own fast delivery. 30 min Maximum</Heading>
             <SubHeading>
@@ -50,7 +50,7 @@ const Services = () => {
           </TextDiv>
         </Box>
         <Box>
-          <Number>01</Number>
+          <Number>04</Number>
           <TextDiv>
             <Heading>Professional, experienced chefs</Heading>
             <SubHeading>
@@ -60,9 +60,19 @@ const Services = () => {
           </TextDiv>
         </Box>
         <Box>
-          <Number>01</Number>
+          <Number>05</Number>
           <TextDiv>
             <Heading>The highest standards of service</Heading>
+            <SubHeading>
+              Porro nemo veniam necessitatibus praesentium eligendi rem
+              temporibus adipisci quo modi numquam.
+            </SubHeading>
+          </TextDiv>
+        </Box>
+        <Box>
+          <Number>06</Number>
+          <TextDiv>
+            <Heading>Healthy and Hygenic Food</Heading>
             <SubHeading>
               Porro nemo veniam necessitatibus praesentium eligendi rem
               temporibus adipisci quo modi numquam.

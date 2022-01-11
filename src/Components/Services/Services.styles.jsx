@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ServicesSection = styled.div`
-  margin: 3rem 5rem;
+  margin: 3rem 1rem;
   @media (max-width: 600px) {
     margin: 3rem 0.5rem;
   }
@@ -27,6 +27,7 @@ export const Heading = styled.div`
   color: #231e41;
   font-size: 20px;
   font-weight: 600;
+  text-transform: capitalize;
 `
 export const SubHeading = styled.p`
   color: #6f6f87;

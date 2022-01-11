@@ -14,6 +14,7 @@ export const DefaultArrow = css`
 `
 
 export const Button = styled.button`
+  position: relative;
   background-color: #f5c332;
   color: #fff;
   font-size: 0.9em;
@@ -31,6 +32,7 @@ export const Button2 = styled(Button)`
     background: #fff;
     color: #f5c332;
     border: 1px solid #f5c332;
+    transition: all 0.3s ease-in-out;
   }
 `
 

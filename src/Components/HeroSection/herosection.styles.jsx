@@ -21,12 +21,15 @@ export const HeroSections = styled.div`
   align-items: center;
   flex-wrap: wrap;
   margin: 70px 60px 0 60px;
-  @media (max-width: 600px) {
-    justify-content: center;
-    margin: 60px 10px 0 10px;
+  @media (max-width: 1024px) {
+    margin: 70px 1px 0 10px;
   }
   @media (max-width: 768px) {
     justify-content: center;
+  }
+  @media (max-width: 600px) {
+    justify-content: center;
+    margin: 60px 10px 0 10px;
   }
 `
 

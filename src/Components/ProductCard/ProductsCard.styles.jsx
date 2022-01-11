@@ -36,4 +36,5 @@ export const Price = styled.span`
   color: #231e41;
   font-size: 1rem;
   font-weight: bold;
+  padding: 0 0.5rem;
 `

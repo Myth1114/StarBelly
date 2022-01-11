@@ -7,6 +7,7 @@ import WhyUs from '../../Components/WhyUs/WhyUs'
 import './landingpage.css'
 import Services from '../../Components/Services/Services'
 import Review from '../../Components/Review/Review'
+import Banner from '../../Components/Banner/Banner'
 
 const LandingPage = () => {
   return (
@@ -19,6 +20,7 @@ const LandingPage = () => {
         <TopProducts />
         <Services />
         <Review />
+        <Banner/>
       </motion.div>
     </section>
   )

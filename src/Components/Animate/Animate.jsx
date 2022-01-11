@@ -40,3 +40,16 @@ export const ImageAnimation = {
     },
   },
 }
+
+export const zoomInAnimate = {
+  hidden: { scale: 0.6, opacity: 0.5 },
+  show: {
+    scale: 0.8,
+    opacity: 1,
+    transition: {
+      delay: 0.09,
+      duration: 5,
+      ease: 'easeInOut',
+    },
+  },
+}

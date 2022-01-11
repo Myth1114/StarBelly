@@ -1,29 +1,26 @@
-// import logo from './logo.svg';
-
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion'
 import React from 'react'
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import { Route, Switch,useLocation } from 'react-router-dom'
-import './App.css';
-import Header from './Components/Header/Header';
-import LandingPage from './Pages/LandingPage/LandingPage';
-import ProductDetail from './Pages/ProductDetails/ProductDetail';
 
+import { Route, Switch, useLocation } from 'react-router-dom'
+import './App.css'
+import Header from './Components/Header/Header'
+import LandingPage from './Pages/LandingPage/LandingPage'
+import ProductDetail from './Pages/ProductDetails/ProductDetail'
+import Menu from './Components/Menu/Menu'
 function App() {
-  const location=useLocation()
+  const location = useLocation()
   return (
-    <div className="App">
-      <Header/>
+    <div className='App'>
+      <Header />
       <AnimatePresence exitBeforeEnter>
-      <Switch location={location} key={location.key}>
+        <Switch location={location} key={location.key}>
           <Route exact path='/' component={LandingPage} />
-          <Route exact path='/productDetail' component={ProductDetail}/>
+          <Route exact path='/productDetail' component={ProductDetail} />
+          <Route exact path='/menu' component={Menu} />
         </Switch>
       </AnimatePresence>
-      
-
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
