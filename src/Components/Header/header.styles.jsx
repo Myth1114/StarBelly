@@ -42,8 +42,12 @@ export const MenusUlLi = styled.li`
   font-size: 14px;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+  white-space:nowrap;
   @media (max-width: 768px) {
     padding: 0 20px;
+  }
+  &:hover{
+    color:#f5c332;
   }
 `
 

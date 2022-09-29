@@ -17,14 +17,18 @@ const Header = () => {
           <h2>StarBelly</h2>
         </StarBelly>
         <MenusUl>
+          <Link to='/'>
           <MenusUlLi>Home</MenusUlLi>
-          <MenusUlLi>Pages</MenusUlLi>
-          <MenusUlLi>Menu</MenusUlLi>
-          <MenusUlLi>Contact</MenusUlLi>
-          <MenusUlLi>About Us</MenusUlLi>
+          </Link>
           <Link to='/menu'>
             <MenusUlLi>Menu</MenusUlLi>
           </Link>
+          <MenusUlLi>Pages</MenusUlLi>
+          <Link to='contact'>
+          <MenusUlLi>Contact</MenusUlLi>
+          </Link>
+          <MenusUlLi>About Us</MenusUlLi>
+          
         </MenusUl>
         <div className='socialIcon'>
           <Button primary>Login</Button>

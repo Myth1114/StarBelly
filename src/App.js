@@ -7,6 +7,7 @@ import Header from './Components/Header/Header'
 import LandingPage from './Pages/LandingPage/LandingPage'
 import ProductDetail from './Pages/ProductDetails/ProductDetail'
 import Menu from './Components/Menu/Menu'
+import contact from './Pages/Contact/contact'
 function App() {
   const location = useLocation()
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route exact path='/' component={LandingPage} />
           <Route exact path='/productDetail' component={ProductDetail} />
           <Route exact path='/menu' component={Menu} />
+          <Route exact path='/contact' component={contact} />
         </Switch>
       </AnimatePresence>
     </div>
