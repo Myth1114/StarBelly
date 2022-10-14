@@ -1,5 +1,33 @@
-import styled, { css } from 'styled-components'
+import styled, { css,keyframes } from 'styled-components'
 
+export const fadeInOut = keyframes`
+0% {
+    -webkit-transform: scale(1);
+    transition: all 2s ease-in-out;
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transition: all 2s ease-in-out;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transition: all 2s ease-in-out;
+  }
+`
+export const upSideDown = keyframes`
+0% {
+    -webkit-transform: translateY(10px);
+    transition: all 2s ease-in-out;
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+    transition: all 2s ease-in-out;
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+    transition: all 2s ease-in-out;
+  }
+`
 export const DefaultArrow = css`
   height: 40px;
   width: 40px;

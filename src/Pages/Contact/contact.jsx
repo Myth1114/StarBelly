@@ -1,9 +1,13 @@
 import React from 'react'
-import { Container,Text,LeftBox,RightBox,Heading,Message,Form,Label,Input,Para } from './contact.styles'
+import { Container,Text,LeftBox,RightBox,Heading,Message,Form,Label,Input,Para,Small ,Image,Img} from './contact.styles'
 const contact = () => {
   return (
     <Container>
+      <Image>
+      <Img src='/Images/envelope1.png' alt='envelope'></Img>
+      </Image>
         <LeftBox>
+          <Small>Contact</Small>
         <Text>
         <Heading>Get in Touch with Starbelly</Heading>
         <Para>Consectetur numquam poro nemo veniam

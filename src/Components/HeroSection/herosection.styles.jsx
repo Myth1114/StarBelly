@@ -1,19 +1,6 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 import { motion } from 'framer-motion'
-const fadeInOut = keyframes`
-0% {
-    -webkit-transform: scale(1);
-    transition: all 2s ease-in-out;
-  }
-  50% {
-    -webkit-transform: scale(1.1);
-    transition: all 2s ease-in-out;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transition: all 2s ease-in-out;
-  }
-`
+import {fadeInOut} from '../GlobalStyles/globalstyles'
 
 export const HeroSections = styled.div`
   display: flex;
