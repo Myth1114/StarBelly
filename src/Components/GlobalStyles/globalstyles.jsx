@@ -63,7 +63,24 @@ export const Button2 = styled(Button)`
     transition: all 0.3s ease-in-out;
   }
 `
-
+export const AnimatedButton=styled.button`
+display:inline-block;
+padding:.6rem 2rem;
+color:#fff;
+background-color:#f5c332;
+border:none;
+outline:none;
+border-radius:.7rem;
+cursor:pointer;
+box-shadow:inset 0 0 0 0 #ffffff;
+transition:.7s;
+&:hover{
+  color:#000;
+  box-shadow:inset 150px 0 0 0 #ffffff;
+  border:1px solid #f5c332;
+  outline:none;
+}
+`
 export const PrimaryHeading = styled.h1`
   font-size: 40px;
   letter-spacing: -2px;

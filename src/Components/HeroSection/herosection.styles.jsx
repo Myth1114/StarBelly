@@ -11,10 +11,14 @@ export const HeroSections = styled.div`
   @media (max-width: 1024px) {
     margin: 70px 1px 0 10px;
   }
+  @media (max-width: 810px) {
+    flex-wrap: nowrap;
+  }
   @media (max-width: 768px) {
     justify-content: center;
   }
   @media (max-width: 600px) {
+    flex-wrap: wrap;
     justify-content: center;
     margin: 60px 10px 0 10px;
   }

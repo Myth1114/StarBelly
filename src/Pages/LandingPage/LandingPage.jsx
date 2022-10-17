@@ -8,6 +8,7 @@ import './landingpage.css'
 import Services from '../../Components/Services/Services'
 import Review from '../../Components/Review/Review'
 import Banner from '../../Components/Banner/Banner'
+import Team from '../../Components/Team/Team'
 
 const LandingPage = () => {
   return (
@@ -19,6 +20,7 @@ const LandingPage = () => {
         <WhyUs />
         <TopProducts />
         <Services />
+        <Team/>
         <Review />
         <Banner/>
       </motion.div>
